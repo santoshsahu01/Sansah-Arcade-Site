@@ -1,0 +1,30 @@
+body{
+
+    background-color: rgb(100,10  , 10);
+}
+
+
+h1{
+
+
+    background-color: bisque;
+}
+
+
+.div1{
+
+    background-color: aquamarine;
+
+    height: 100px;
+
+    width: 100px;
+}
+
+.div2{
+
+    background-color: rgb(6, 29, 21);
+
+    height: 90px;
+
+    width: 90px;
+}

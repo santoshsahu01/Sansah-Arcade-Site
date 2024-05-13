@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+<style>
+
+    *{
+
+margin: 0px;
+padding: 0px;
+
+    }
+
+    .container
+
+{
+background-color:	#e9cec3;
+display:flex ;
+border:2px solid red;
+height: 600px;
+width: 60%;
+margin:0 auto;
+position:relative;
+border-radius: 30px;
+
+}
+
+.grid{
+
+background-color: #d1a99b;
+border:2px solid red;
+height: 500px;
+width: 30%;
+position:absolute;
+left:0px;
+top:100px;
+border-radius: 30px;
+}
+
+
+.grid-2{
+    background-color: #d1a99b;
+border:2px solid red;
+height: 500px;
+width: 68%;
+position:absolute;
+right:0px;
+top:100px;
+border-radius: 30px;
+align-items: center;
+}
+
+
+
+
+
+.lis-style{
+    border-radius: 30px;
+list-style-type:none;
+}
+
+
+
+li{
+
+
+    
+
+
+    background-color:	#e4dede;
+
+    padding:10px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+li:hover{
+    background-color:	#ecd6d6;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+
+.heading{
+
+display:block;
+margin: 0 auto;
+    border:2px solid red;
+    height: 95px;
+    width: 60%;
+    position:fixed;
+    background-color:	#e6ecd6;
+    border-radius: 30px;
+
+    text-align: center;
+
+
+}
+
+.proPicture
+{
+    position: absolute;
+height: 90%;
+width:90% ;
+border: 2px solid rgb(51, 255, 0);
+border-radius: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+margin:20px;
+}
+
+
+img{
+height: 100px;
+width:100px ;
+border-radius: 50%;
+border: 2px solid red;
+
+}
+</style>
+
+</head>
+<body>
+    <section>
+<div class="container" id="profile">
+
+
+
+
+
+<div class="heading"> 
+    
+    
+ 
+    
+    
+    
+    
+    
+    This Is an heading</div>
+<div class="grid">
+
+
+
+    <ul class="lis-style">
+        <li onclick="toggleVisibility()">Enrol Now</li>
+        <li onclick="showDiv()">Current Play Schedule</li>
+        <li id="changeDiv" onclick="changeDiv()">Matches</li>
+        <li onclick="changeContent()">Contact Us</li>
+        <li>Help</li>
+        <li>Raise Query</li>
+        <li>Payment Status</li>
+        <li>Call Us</li>
+        <li>Logout</li>
+      </ul>  
+</div>
+<div class="grid-2">
+    <div class="proPicture"  id="firstDiv">
+        <img id="img" src="misa/sonu.jpeg" alt="sonu">
+        <img id="img2" src="misa/sonu.jpeg" alt="sonu">
+        <img id="img" src="misa/sonu.jpeg" alt="sonu">
+
+           
+    </div>
+    <div class="proPicture"  id="secondDiv">
+        <img id="img" src="misa/sonu.jpeg" alt="sonu">
+        <img id="img2" src="misa/sonu.jpeg" alt="sonu">
+        <img id="img" src="misa/sonu.jpeg" alt="sonu">
+
+           
+    </div>
+    
+</div>
+
+</div>
+</section>
+<script>
+    function toggleVisibility() {
+      var element = document.getElementById("img");
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+
+
+    function showDiv() {
+      var element = document.getElementById("img2");
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+
+
+
+
+    function changeDiv() {
+    var element = document.querySelector("#changeDiv");
+    element.innerHTML = "New content after click!";
+  }
+
+
+
+
+
+  function changeContent() {
+    var firstDiv = document.querySelector("#firstDiv");
+    var secondDiv = document.getElementById("secondDiv");
+
+    // firstDiv.innerHTML = "New content for the first div!";
+    secondDiv.innerText = "New content for the second div!";
+  }
+  </script>
+</body>
+</html>

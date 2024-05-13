@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    width: 50;
+
+}
+.logo{
+    width: 20%;
+    display: flex;
+   
+}
+.logo img{
+    width: 50%;
+    border: 0pc;
+
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-list{
+    width: 50%;
+    background-color: rgb(17, 1, 2);
+
+
+}
+.nav-list li a{
+text-decoration:none;
+color: azure;
+
+}
+.rightnav{
+    background-color: deeppink;
+    width: 50%;
+    text-align: right;
+}

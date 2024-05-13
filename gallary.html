@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+    <style>
+
+.boxBig{
+
+border:2px solid red;
+width: 60%;
+height: 600px;
+display:flex;
+
+margin:0 auto;
+border-radius: 10px;
+
+}
+
+.picGal{
+
+
+display:flex;
+border:2px solid rgb(0, 255, 102);
+width: 300px;
+height: 200px;
+margin: 20px;
+position: relative;
+background-color: beige;
+border-radius: 20px;
+text-align: center;
+
+
+}
+
+.lable{
+
+    border:2px solid rgb(29, 12, 222);
+text-align: center;
+background-color: blanchedalmond;
+    display:flex;
+    margin:0 auto;
+    position: absolute;
+    bottom: 0;
+ width:98%;
+ border-radius: 20px;
+
+}
+
+
+    </style>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="boxBig">
+box
+
+
+<div  id="container" class="picGal">
+
+box2
+
+
+
+<div class="lable">
+
+
+    This is An Image
+
+</div>
+
+</div>
+    </div>
+
+
+
+    <script>
+
+function createDivs(numberOfDivs) {
+   const container = document.getElementById("container");
+   
+   for (let i = 0; i < numberOfDivs; i++) {
+    const newDiv = document.createElement("div");
+    newDiv.className = 'picGal';
+
+    newDiv.textContent = `Dynamic Div ${i + 1}`;
+    container.appendChild(newDiv);
+   }
+ }
+
+ createDivs(0);
+    </script>
+</body>
+</html>
